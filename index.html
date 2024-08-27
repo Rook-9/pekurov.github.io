@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ссылка на файл CSS для стилей -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#astrology">Astrology</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p>Здесь будет информация обо мне.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Описание твоих проектов.</p>
+
+            <h3>Astrology Form</h3>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="astrology">
+            <h2>Astrology</h2>
+            <p>Информация или виджет по астрологии.</p>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Find me on social media:</p>
+            <ul>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
