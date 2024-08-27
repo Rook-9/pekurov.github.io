@@ -61,7 +61,7 @@ main section {
     display: block;
     margin: 0 auto;
     max-width: 150px;
-    border-radius: 50%;
+    border-radius: 6%;
 }
 
 #about-me p {
