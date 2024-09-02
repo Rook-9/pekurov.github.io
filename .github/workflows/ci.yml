@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -26,6 +26,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install playwright pytest
         playwright install
+
+    - name: Install WebKit dependencies
+      run: |
+        sudo apt-get install -y libwoff1 libopus0 libwebp6 libwebpdemux2 libenchant1c2a \
+        libgudev-1.0-0 libsecret-1-0 libhyphen0 libgdk-pixbuf2.0-0 libegl1 \
+        libgles2 libevent-2.1-6 libnotify4 libxslt1.1 libvpx6
 
     - name: Run Playwright tests in Chromium
       run: |
