@@ -29,9 +29,15 @@ jobs:
 
     - name: Install WebKit dependencies
       run: |
+        sudo apt-get update
         sudo apt-get install -y libwoff1 libopus0 libwebp-dev libwebpdemux2 libenchant-2-2 \
         libgudev-1.0-0 libsecret-1-0 libhyphen0 libgdk-pixbuf2.0-0 libegl1 \
-        libgles2 libnotify4 libxslt1.1 libvpx-dev
+        libgles2 libnotify4 libxslt1.1 libvpx-dev libevent-2.1-7 \
+        gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-base \
+        gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools \
+        gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 \
+        gstreamer1.0-pulseaudio gstreamer1.0-qt5 gstreamer1.0-libav libharfbuzz-icu0 \
+        libmanette-0.2-0 flite1-dev libx264-dev
 
     - name: Run Playwright tests in Chromium
       run: |
