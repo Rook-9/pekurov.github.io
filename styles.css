@@ -68,6 +68,35 @@ main section {
     text-align: center;
 }
 
+/* Общее оформление секции скиллов */
+#about-me .skill {
+    margin-bottom: 10px;
+}
+
+#about-me .skill span {
+    display: block;
+    font-weight: bold;
+}
+
+#about-me .progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+}
+
+#about-me .progress-bar .progress {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0;
+    /* Прогресс будет изменяться через инлайн-стиль */
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
 
 
 h1,
