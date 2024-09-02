@@ -27,6 +27,14 @@ jobs:
         pip install playwright pytest
         playwright install
 
-    - name: Run Playwright test
+    - name: Run Playwright tests in Chromium
       run: |
-        python -m pytest test_sample.py
+        python -m pytest -v test_sample.py::test_status_code_200_chromium
+
+    - name: Run Playwright tests in Firefox
+      run: |
+        python -m pytest -v test_sample.py::test_status_code_200_firefox
+
+    - name: Run Playwright tests in WebKit
+      run: |
+        python -m pytest -v test_sample.py::test_status_code_200_webkit
