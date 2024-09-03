@@ -40,7 +40,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Стили для основного контента */
 main {
     flex-grow: 1;
     width: 100%;
@@ -57,15 +56,28 @@ main section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.container {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.container ul {
+    padding: 50px;
+}
+
 #about-me img {
-    display: block;
-    margin: 0 auto;
     max-width: 150px;
-    border-radius: 6%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 20px;
 }
 
 #about-me p {
-    text-align: center;
+    text-align: left;
 }
 
 /* Общее оформление секции скиллов */
@@ -97,13 +109,21 @@ main section {
     border-radius: 5px;
 }
 
-
-
-h1,
-h2,
-h3 {
-    margin-top: 0;
+details summary {
+    cursor: pointer;
+    margin-bottom: 1em;
 }
+
+details p,
+details ul {
+    margin-left: 20px;
+}
+
+
+h3 {
+    margin-top: 2em;
+}
+
 
 form {
     display: flex;

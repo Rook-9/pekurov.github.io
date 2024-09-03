@@ -22,40 +22,61 @@
     <main>
         <section id="about-me">
             <h1>About Me</h1>
-            <img src="images/myPhoto.jpg" alt="Photo of Kirill Pekurov"
-                style="max-width: 250px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover">
-            <p><strong>Name:</strong> Kirill Pekurov</p>
-            <p><strong>Position:</strong> QA Engineer</p>
-            <p><strong>Date of Birth:</strong> 21.12.1994</p>
+            <div class="container">
+                <ul>
+                    <li><strong>Name:</strong> Kirill Pekurov</li>
+                    <li><strong>Position:</strong> QA Engineer</li>
+                    <li><strong>Date of Birth:</strong> 21.12.1994</li>
+                </ul>
+                <img src="images/myPhoto.jpg" alt="Photo of Kirill Pekurov">
+            </div>
+            <p>Detail oriented QA Engineer with foundational experience in software testing, quality assurance, and team
+                collaboration. Skilled in executing testcases, analysing software applications, and contributing to
+                product improvement discussions. Eager to apply technical documentation skills and a soldi understandig
+                of the SDLC to further develop as a professional in the tech industry.
+            </p>
             <h3>Professional Skills</h3>
 
-            <h4>Documentation Management</h4>
-            <p>
-                <strong>Companies:</strong> LLC Electrosystem, Alfa-Bank, VTB, Rusfinance Bank(Societe generale)<br>
-                <strong>Skills:</strong>
-                Negotiation and signing of contracts, handling commercial proposals, and preparing documentation.
-            </p>
 
-            <h4>Logistics and Project Management</h4>
-            <p>
-                <strong>Company:</strong> LLC Electrosystem<br>
-                <strong>Skills:</strong>
-                Project development, organizing logistics, and managing accounts.
-            </p>
+            <details>
+                <summary>Documentation Management</summary>
+                <p>
+                    <strong>Companies:</strong> LLC Electrosystem, Alfa-Bank, VTB, Rusfinance Bank(Societe generale)<br>
+                    <strong>Skills:</strong>
+                    Negotiation and signing of contracts, handling commercial proposals, and preparing documentation.
+                    It was my day to day routine to work with documentation of all kinds: checks, invoices, tech
+                    documentation of any kind, passports, bills.
+                </p>
+            </details>
 
-            <h4>Analytical Skills and Data Handling</h4>
-            <p>
-                <strong>Companies:</strong> LLC Addinol, MTS, VTB, Rusfinance Bank(Societe generale)<br>
-                <strong>Skills:</strong>
-                Client needs analysis, preparing commercial offers, and risk assessment for loan recovery.
-            </p>
+            <details>
+                <summary>Logistics and Project Management</summary>
+                <p>
+                    <strong>Company:</strong> LLC Electrosystem<br>
+                    <strong>Skills:</strong>
+                    Project development, organizing logistics, and managing accounts.
+                    One of the comon project was like: Deliver 2 tonns of underwater electric cable asap. So I had to
+                    negotiate with the factory for faster release of the cable, with warehouse so the cable was included
+                    in the next delivery, with logistics team, with driver and also with client.
+                </p>
+            </details>
+            <details>
+                <summary>Analytical Skills and Data Handlin</summary>
+                <p>
+                    <strong>Companies:</strong> LLC Addinol, MTS, VTB, Rusfinance Bank(Societe generale)<br>
+                    <strong>Skills:</strong>
+                    Client needs analysis, preparing commercial offers, and risk assessment for loan recovery.
+                </p>
+            </details>
 
-            <h4>Communication Skills and Client Management</h4>
-            <p>
-                <strong>Companies:</strong> All positions<br>
-                <strong>Skills:</strong>
-                The ability to connect with clients, negotiate, and conduct presentations.
-            </p>
+            <details>
+                <summary>Communication Skills and Client Management</summary>
+                <p>
+                    <strong>Companies:</strong> All positions<br>
+                    <strong>Skills:</strong>
+                    The ability to connect with clients, negotiate, and conduct presentations.
+                </p>
+            </details>
             <!-- Courses and Certifications Section -->
             <h3>Courses and Certifications</h3>
             <ul>
@@ -64,29 +85,47 @@
             </ul>
 
             <!-- Skills Section -->
-            <h3>Skills</h3>
+            <h3>Hard Skills</h3>
             <div class="skill">
-                <span>Jira</span>
+                <span>Python</span>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>SQL</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>English</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 89%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Postman</span>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
+                    <div class="progress" style="width: 70%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Playwright</span>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 75%;"></div>
+                    <div class="progress" style="width: 30%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Charles Proxy</span>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>DevTools</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
                 </div>
             </div>
         </section>
@@ -95,7 +134,12 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>Описание твоих проектов.</p>
+            <details>
+                <summary><a href="https://github.com/Rook-9/pekurov.github.io">My resume site</a></summary>
+                <p>On this project I used HTML for markup and CSS to style it. Also I have used github-pages for deploy
+                    and github actions to automaticaly run crossbrowser python playwryght autotests on each push to
+                    master branch.</p>
+            </details>
     </main>
 
     <footer>
@@ -105,6 +149,7 @@
             <ul>
                 <li><a href="https://t.me/Kirill_ftw">Telegram</a></li>
                 <li><a href="https://www.linkedin.com/in/kirill-pekurov">LinkedIn</a></li>
+                <li><a href="https://github.com/Rook-9">GitHub</a></li>
             </ul>
         </section>
     </footer>
