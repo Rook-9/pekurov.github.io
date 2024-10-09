@@ -1,2 +1,2 @@
-# resume
-Webpage for my resume
+# CV
+Webpage for my CV
